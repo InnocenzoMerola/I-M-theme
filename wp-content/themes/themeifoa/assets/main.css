@@ -13,3 +13,29 @@ img {
 .footer-button {
   color: white;
 }
+
+.back {
+  background-color: #ffffff8c;
+}
+
+.home-post {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-post img {
+  width: 300px;
+  height: 200px;
+}
+
+.artic-img {
+  object-fit: cover;
+  height: 450px;
+}
+
+@media screen and (min-width: 750px) {
+  .artic-img {
+    height: 260px;
+  }
+}

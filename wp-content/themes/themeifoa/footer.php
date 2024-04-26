@@ -101,10 +101,12 @@
             </div>
         </div>
         <div class="row">
-            <div class="col mb-2 mt-2 copyright">© 1997-2023 Netflix, Inc.</div>
+            <div class="col mb-2 mt-2 copyright">© 1997-2023 I&M, Inc.</div>
         </div>
         </div>
       </div>
     </div>
 </body>
 </html>
+<?php
+wp_footer();

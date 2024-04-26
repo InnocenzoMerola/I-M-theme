@@ -8,9 +8,10 @@ get_header();
     while(have_posts()){
         the_post();?>
             <div class="col">
-                <div class="card h-100">
-                    <img src="<?php the_post_thumbnail_url() ?: wp_get_attachment_url(34) ?>" 
-                    class="card-img-top" 
+                <div class="card h-100 ">
+                    <img 
+                    src="<?= get_the_post_thumbnail_url() ?: get_theme_file_uri('/img/default.jpg') ?>" 
+                    class="card-img-top artic-img" 
                     alt="<?php the_title() ?>">
                     
                     <div class="card-body">

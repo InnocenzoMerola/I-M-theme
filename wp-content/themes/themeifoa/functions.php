@@ -23,3 +23,12 @@ function create_sidebar_cards(){?>
         <a href="<?php the_permalink()?>"><?php the_title();?></a>
     </li><?php
 }
+
+function shortcode_ifoa_saluta(){
+    return 'Ciao a tutti';
+}
+
+function theme_shortcodes(){
+    add_shortcode('ifoa-saluta', 'shortcode_ifoa_saluta');
+}
+add_action('init', 'theme_shortcodes');
